@@ -1,0 +1,205 @@
+                                                                             
+┌──(kali㉿kali)-[~]
+└─$ pwd
+/home/kali
+                                                                                                                       
+┌──(kali㉿kali)-[~]
+└─$ cd ..          
+                                                                                                                       
+┌──(kali㉿kali)-[/home]
+└─$ ls     
+dos  kali  studenti  tmp  windows
+                                                                                                                       
+┌──(kali㉿kali)-[/home]
+└─$ cd studenti
+                                                                                                                       
+┌──(kali㉿kali)-[/home/studenti]
+└─$ cd nicola  
+                                                                                                                       
+┌──(kali㉿kali)-[/home/studenti/nicola]
+└─$ cd lavoro
+                                                                                                                       
+┌──(kali㉿kali)-[/home/studenti/nicola/lavoro]
+└─$ cd /home/studenti/anna/casa
+                                                                                                                       
+┌──(kali㉿kali)-[/home/studenti/anna/casa]
+└─$ cp /home/studenti/nicola/scuola/compito.doc /home/studenti/anna/casa
+cp: cannot create regular file '/home/studenti/anna/casa/compito.doc': Permission denied
+                                                                                                                       
+┌──(kali㉿kali)-[/home/studenti/anna/casa]
+└─$ sudo cp /home/studenti/nicola/scuola/compito.doc /home/studenti/anna/casa
+[sudo] password for kali: 
+                                                                                                                       
+┌──(kali㉿kali)-[/home/studenti/anna/casa]
+└─$ ls
+compito.doc
+                                                                                                                       
+┌──(kali㉿kali)-[/home/studenti/anna/casa]
+└─$ sudo mv /home/studenti/nicola/scuola/relazione.doc /home/studenti/anna/casa
+                                                                                                                       
+┌──(kali㉿kali)-[/home/studenti/anna/casa]
+└─$ ls
+compito.doc  relazione.doc
+                                                                                                                       
+┌──(kali㉿kali)-[/home/studenti/anna/casa]
+└─$ sudo rmdir /home/tmp                                                       
+rmdir: failed to remove '/home/tmp': Directory not empty
+                                                                                                                       
+┌──(kali㉿kali)-[/home/studenti/anna/casa]
+└─$ sudo rm /home/tmp   
+rm: cannot remove '/home/tmp': Is a directory
+                                                                                                                       
+┌──(kali㉿kali)-[/home/studenti/anna/casa]
+└─$ rm -r /home/tmp     
+rm: descend into write-protected directory '/home/tmp'? n 
+                                                                                                                       
+┌──(kali㉿kali)-[/home/studenti/anna/casa]
+└─$ cd /home                                                            
+                                                                                                                       
+┌──(kali㉿kali)-[/home]
+└─$ ls
+dos  kali  studenti  tmp  windows
+                                                                                                                       
+┌──(kali㉿kali)-[/home]
+└─$ rm -r tmp      
+rm: descend into write-protected directory 'tmp'? y
+rm: remove write-protected regular empty file 'tmp/risultati.doc'? y
+rm: cannot remove 'tmp/risultati.doc': Permission denied
+                                                                                                                       
+┌──(kali㉿kali)-[/home]
+└─$ sudo rm -r tmp   
+[sudo] password for kali: 
+                                                                                                                       
+┌──(kali㉿kali)-[/home]
+└─$ ls
+dos  kali  studenti  windows
+                                                                                                                       
+┌──(kali㉿kali)-[/home]
+└─$ cd studenti
+                                                                                                                       
+┌──(kali㉿kali)-[/home/studenti]
+└─$ cd nicola  
+                                                                                                                       
+┌──(kali㉿kali)-[/home/studenti/nicola]
+└─$ cd lavoro
+                                                                                                                       
+┌──(kali㉿kali)-[/home/studenti/nicola/lavoro]
+└─$ touch pippo.txt
+touch: cannot touch 'pippo.txt': Permission denied
+                                                                                                                       
+┌──(kali㉿kali)-[/home/studenti/nicola/lavoro]
+└─$ sudo touch pippo.txt
+                                                                                                                       
+┌──(kali㉿kali)-[/home/studenti/nicola/lavoro]
+└─$ ls
+pippo.txt
+                                                                                                                       
+┌──(kali㉿kali)-[/home/studenti/nicola/lavoro]
+└─$ chmod 600 pippo.txt
+chmod: changing permissions of 'pippo.txt': Operation not permitted
+                                                                                                                       
+┌──(kali㉿kali)-[/home/studenti/nicola/lavoro]
+└─$ sudo chmod 600 pippo.txt                                                 
+                                                                                                                       
+┌──(kali㉿kali)-[/home/studenti/nicola/lavoro]
+└─$ ls -l  
+total 0
+-rw------- 1 root root 0 Nov 21 15:00 pippo.txt
+                                                                                                                       
+┌──(kali㉿kali)-[/home/studenti/nicola/lavoro]
+└─$ cd ..              
+                                                                                                                       
+┌──(kali㉿kali)-[/home/studenti/nicola]
+└─$ cd ..
+                                                                                                                       
+┌──(kali㉿kali)-[/home/studenti]
+└─$ cd anna
+                                                                                                                       
+┌──(kali㉿kali)-[/home/studenti/anna]
+└─$ ls   
+casa
+                                                                                                                       
+┌──(kali㉿kali)-[/home/studenti/anna]
+└─$ mv casa .casa               
+mv: cannot move 'casa' to '.casa': Permission denied
+                                                                                                                       
+┌──(kali㉿kali)-[/home/studenti/anna]
+└─$ sudo mv casa .casa                                                         
+                                                                                                                       
+┌──(kali㉿kali)-[/home/studenti/anna]
+└─$ ls
+                                                                                                                       
+┌──(kali㉿kali)-[/home/studenti/anna]
+└─$ cd ..  
+                                                                                                                       
+┌──(kali㉿kali)-[/home/studenti]
+└─$ cd nicola
+                                                                                                                       
+┌──(kali㉿kali)-[/home/studenti/nicola]
+└─$ cd lavoro
+                                                                                                                       
+┌──(kali㉿kali)-[/home/studenti/nicola/lavoro]
+└─$ ls                
+pippo.txt
+                                                                                                                       
+┌──(kali㉿kali)-[/home/studenti/nicola/lavoro]
+└─$ sudo memo pippo.txt
+sudo: memo: command not found
+                                                                                                                       
+┌──(kali㉿kali)-[/home/studenti/nicola/lavoro]
+└─$ cat pippo.txt   
+cat: pippo.txt: Permission denied
+                                                                                                                       
+┌──(kali㉿kali)-[/home/studenti/nicola/lavoro]
+└─$ sudo cat pippo.txt      
+                                                                                                                       
+┌──(kali㉿kali)-[/home/studenti/nicola/lavoro]
+└─$ cd ..        
+                                                                                                                       
+┌──(kali㉿kali)-[/home/studenti/nicola]
+└─$ cd ..
+                                                                                                                       
+┌──(kali㉿kali)-[/home/studenti]
+└─$ cd matteo
+                                                                                                                       
+┌──(kali㉿kali)-[/home/studenti/matteo]
+└─$ ls
+amici
+                                                                                                                       
+┌──(kali㉿kali)-[/home/studenti/matteo]
+└─$ rm amici 
+rm: cannot remove 'amici': Is a directory
+                                                                                                                       
+┌──(kali㉿kali)-[/home/studenti/matteo]
+└─$ sudo rmdir amici    
+                                                                                                                       
+┌──(kali㉿kali)-[/home/studenti/matteo]
+└─$ ls
+                                                                                                                       
+┌──(kali㉿kali)-[/home/studenti/matteo]
+└─$ cd /home 
+                                                                                                                       
+┌──(kali㉿kali)-[/home]
+└─$ ls
+dos  kali  studenti  windows
+                                                                                                                       
+┌──(kali㉿kali)-[/home]
+└─$ sudo rm -r dos  
+                                                                                                                       
+┌──(kali㉿kali)-[/home]
+└─$ ls
+kali  studenti  windows
+                                                                                                                       
+┌──(kali㉿kali)-[/home]
+└─$ sudo rm -r studenti
+                                                                                                                       
+┌──(kali㉿kali)-[/home]
+└─$ ls
+kali  windows
+                                                                                                                       
+┌──(kali㉿kali)-[/home]
+└─$ sudo rm -r windows 
+                                                                                                                       
+┌──(kali㉿kali)-[/home]
+└─$ ls
+kali
