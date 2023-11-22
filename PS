@@ -1,0 +1,462 @@
+┌──(kali㉿kali)-[~]
+└─$ ls
+Desktop  Documents  Downloads  Music  Pictures  Public  Templates  Videos
+                                                                                                                       
+┌──(kali㉿kali)-[~]
+└─$ cd ..   
+                                                                                                                       
+┌──(kali㉿kali)-[/home]
+└─$ ls
+kali
+                                                                                                                       
+┌──(kali㉿kali)-[/home]
+└─$ sudo su      
+[sudo] password for kali: 
+┌──(root㉿kali)-[/home]
+└─# mkdir dos  
+                                                                                                                       
+┌──(root㉿kali)-[/home]
+└─# mkdir stu     
+                                                                                                                       
+┌──(root㉿kali)-[/home]
+└─# mkdir windows
+                                                                                                                       
+┌──(root㉿kali)-[/home]
+└─# ls
+dos  kali  stu  windows
+                                                                                                                       
+┌──(root㉿kali)-[/home]
+└─# rmdir stu
+                                                                                                                       
+┌──(root㉿kali)-[/home]
+└─# ls
+dos  kali  windows
+                                                                                                                       
+┌──(root㉿kali)-[/home]
+└─# mkdir studenti
+                                                                                                                       
+┌──(root㉿kali)-[/home]
+└─# mkdir tmp     
+                                                                                                                       
+┌──(root㉿kali)-[/home]
+└─# cd tmp
+                                                                                                                       
+┌──(root㉿kali)-[/home/tmp]
+└─# touch risultati.doc
+                                                                                                                       
+┌──(root㉿kali)-[/home/tmp]
+└─# ls
+risultati.doc
+                                                                                                                       
+┌──(root㉿kali)-[/home/tmp]
+└─# cd .. 
+                                                                                                                       
+┌──(root㉿kali)-[/home]
+└─# cd studenti
+                                                                                                                       
+┌──(root㉿kali)-[/home/studenti]
+└─# mkdir nicola
+                                                                                                                       
+┌──(root㉿kali)-[/home/studenti]
+└─# mkdir anna  
+                                                                                                                       
+┌──(root㉿kali)-[/home/studenti]
+└─# mkdir mattero
+                                                                                                                       
+┌──(root㉿kali)-[/home/studenti]
+└─# mv mattero matteo
+                                                                                                                       
+┌──(root㉿kali)-[/home/studenti]
+└─# ls
+anna  matteo  nicola
+                                                                                                                       
+┌──(root㉿kali)-[/home/studenti]
+└─# cd nicola  
+                                                                                                                       
+┌──(root㉿kali)-[/home/studenti/nicola]
+└─# mkdir scuola     
+                                                                                                                       
+┌──(root㉿kali)-[/home/studenti/nicola]
+└─# mkdir lavoro
+                                                                                                                       
+┌──(root㉿kali)-[/home/studenti/nicola]
+└─# cd scuola  
+                                                                                                                       
+┌──(root㉿kali)-[/home/studenti/nicola/scuola]
+└─# touch relazione.doc 
+                                                                                                                       
+┌──(root㉿kali)-[/home/studenti/nicola/scuola]
+└─# touch compito.doc  
+                                                                                                                       
+┌──(root㉿kali)-[/home/studenti/nicola/scuola]
+└─# cd ..    
+                                                                                                                       
+┌──(root㉿kali)-[/home/studenti/nicola]
+└─# cd ..
+                                                                                                                       
+┌──(root㉿kali)-[/home/studenti]
+└─# cd anna
+                                                                                                                       
+┌──(root㉿kali)-[/home/studenti/anna]
+└─# mkdir casa  
+                                                                                                                       
+┌──(root㉿kali)-[/home/studenti/anna]
+└─# cd ..  
+                                                                                                                       
+┌──(root㉿kali)-[/home/studenti]
+└─# cd matteo
+                                                                                                                       
+┌──(root㉿kali)-[/home/studenti/matteo]
+└─# mkdir amici
+                                                                                                                       
+┌──(root㉿kali)-[/home/studenti/matteo]
+└─# cd ..    
+                                                                                                                       
+┌──(root㉿kali)-[/home/studenti]
+└─# cd nicola
+                                                                                                                       
+┌──(root㉿kali)-[/home/studenti/nicola]
+└─# ls       
+lavoro  scuola
+                                                                                                                       
+┌──(root㉿kali)-[/home/studenti/nicola]
+└─# chmod 700 lavoro
+                                                                                                                       
+┌──(root㉿kali)-[/home/studenti/nicola]
+└─# ls -l
+total 8
+drwx------ 2 root root 4096 Nov 22 13:36 lavoro
+drwxr-xr-x 2 root root 4096 Nov 22 13:36 scuola
+                                                                                                                       
+┌──(root㉿kali)-[/home/studenti/nicola]
+└─# cd lavoro       
+                                                                                                                       
+┌──(root㉿kali)-[/home/studenti/nicola/lavoro]
+└─# man emacs  
+No manual entry for emacs
+                                                                                                                       
+┌──(root㉿kali)-[/home/studenti/nicola/lavoro]
+└─# emacs pippo.txt
+Command 'emacs' not found, did you mean:
+  command 'jmacs' from deb joe
+  command 'jmacs' from deb joe-jupp
+Try: apt install <deb name>
+                                                                                                                       
+┌──(root㉿kali)-[/home/studenti/nicola/lavoro]
+└─# touch pippo.txt  
+                                                                                                                       
+┌──(root㉿kali)-[/home/studenti/nicola/lavoro]
+└─# ls   
+pippo.txt
+                                                                                                                       
+┌──(root㉿kali)-[/home/studenti/nicola/lavoro]
+└─# mv lavoro .lavoro
+mv: cannot stat 'lavoro': No such file or directory
+                                                                                                                       
+┌──(root㉿kali)-[/home/studenti/nicola/lavoro]
+└─# cd ..    
+                                                                                                                       
+┌──(root㉿kali)-[/home/studenti/nicola]
+└─# mv lavoro .lavoro
+                                                                                                                       
+┌──(root㉿kali)-[/home/studenti/nicola]
+└─# ls -l
+total 4
+drwxr-xr-x 2 root root 4096 Nov 22 13:36 scuola
+                                                                                                                       
+┌──(root㉿kali)-[/home/studenti/nicola]
+└─# ls -a
+.  ..  .lavoro  scuola
+                                                                                                                       
+┌──(root㉿kali)-[/home/studenti/nicola]
+└─# cd .lavoro
+                                                                                                                       
+┌──(root㉿kali)-[/home/studenti/nicola/.lavoro]
+└─# ls   
+pippo.txt
+                                                                                                                       
+┌──(root㉿kali)-[/home/studenti/nicola/.lavoro]
+└─# more pippo.txt   
+                                                                                                                       
+┌──(root㉿kali)-[/home/studenti/nicola/.lavoro]
+└─# cd ..     
+                                                                                                                       
+┌──(root㉿kali)-[/home/studenti/nicola]
+└─# cd scuola
+                                                                                                                       
+┌──(root㉿kali)-[/home/studenti/nicola/scuola]
+└─# mkdir .mia    
+                                                                                                                       
+┌──(root㉿kali)-[/home/studenti/nicola/scuola]
+└─# chmod 700 .mia  
+                                                                                                                       
+┌──(root㉿kali)-[/home/studenti/nicola/scuola]
+└─# ls
+compito.doc  relazione.doc
+                                                                                                                       
+┌──(root㉿kali)-[/home/studenti/nicola/scuola]
+└─# ls -al
+total 12
+drwxr-xr-x 3 root root 4096 Nov 22 13:52 .
+drwxr-xr-x 4 root root 4096 Nov 22 13:46 ..
+-rw-r--r-- 1 root root    0 Nov 22 13:36 compito.doc
+drwx------ 2 root root 4096 Nov 22 13:52 .mia
+-rw-r--r-- 1 root root    0 Nov 22 13:36 relazione.doc
+                                                                                                                       
+┌──(root㉿kali)-[/home/studenti/nicola/scuola]
+└─# nano &
+[1] 11831
+                                                                                                                       
+[1]  + suspended (tty output)  nano
+┌──(root㉿kali)-[/home/studenti/nicola/scuola]
+└─# jobs
+[1]  + suspended (tty output)  nano
+                                                                                                                       
+┌──(root㉿kali)-[/home/studenti/nicola/scuola]
+└─# firefox
+Running Firefox as root in a regular user's session is not supported.  ($XAUTHORITY is /home/kali/.Xauthority which is owned by kali.)
+                                                                                                                       
+┌──(root㉿kali)-[/home/studenti/nicola/scuola]
+└─# exit           
+zsh: you have suspended jobs.
+                                                                                                                       
+┌──(root㉿kali)-[/home/studenti/nicola/scuola]
+└─# jobs
+[1]  + suspended (tty output)  nano
+                                                                                                                       
+┌──(root㉿kali)-[/home/studenti/nicola/scuola]
+└─# jobs -l
+[1]  + 11831 suspended (tty output)  nano
+                                                                                                                       
+┌──(root㉿kali)-[/home/studenti/nicola/scuola]
+└─# kill 11831
+                                                                                                                       
+┌──(root㉿kali)-[/home/studenti/nicola/scuola]
+└─# jobs -l
+[1]  + 11831 suspended (tty output)  nano
+                                                                                                                       
+┌──(root㉿kali)-[/home/studenti/nicola/scuola]
+└─# eixt
+eixt: command not found
+                                                                                                                       
+┌──(root㉿kali)-[/home/studenti/nicola/scuola]
+└─# exit
+zsh: you have suspended jobs.
+                                                                                                                       
+┌──(root㉿kali)-[/home/studenti/nicola/scuola]
+└─# ps
+    PID TTY          TIME CMD
+   1673 pts/1    00:00:00 sudo
+   1674 pts/1    00:00:00 su
+   1675 pts/1    00:00:03 zsh
+  11831 pts/1    00:00:00 nano
+  15283 pts/1    00:00:00 ps
+                                                                                                                       
+┌──(root㉿kali)-[/home/studenti/nicola/scuola]
+└─# kill -9 11831
+                                                                                                                       
+[1]  + killed     nano
+┌──(root㉿kali)-[/home/studenti/nicola/scuola]
+└─# ps 
+    PID TTY          TIME CMD
+   1673 pts/1    00:00:00 sudo
+   1674 pts/1    00:00:00 su
+   1675 pts/1    00:00:03 zsh
+  15439 pts/1    00:00:00 ps
+                                                                                                                       
+┌──(root㉿kali)-[/home/studenti/nicola/scuola]
+└─# exit
+                                                                                                                       
+┌──(kali㉿kali)-[/home]
+└─$ nano &           
+[1] 16041
+                                                                                                                       
+[1]  + suspended (tty output)  nano
+┌──(kali㉿kali)-[/home]
+└─$ firefox 
+^Z
+zsh: suspended  firefox
+                                                                                                                       
+┌──(kali㉿kali)-[/home]
+└─$ bg firefox 
+[2]  - continued  firefox
+                                                                                                                       
+┌──(kali㉿kali)-[/home]
+└─$ jobs
+[1]  + suspended (tty output)  nano
+[2]  - running    firefox
+                                                                                                                       
+┌──(kali㉿kali)-[/home]
+└─$ fg nano
+[1]  - continued  nano
+                                                                                                                       
+┌──(kali㉿kali)-[/home]
+└─$ ps -ef
+UID          PID    PPID  C STIME TTY          TIME CMD
+root           1       0  0 13:32 ?        00:00:01 /sbin/init splash
+root           2       0  0 13:32 ?        00:00:00 [kthreadd]
+root           3       2  0 13:32 ?        00:00:00 [rcu_gp]
+root           4       2  0 13:32 ?        00:00:00 [rcu_par_gp]
+root           5       2  0 13:32 ?        00:00:00 [slub_flushwq]
+root           6       2  0 13:32 ?        00:00:00 [netns]
+root           9       2  0 13:32 ?        00:00:00 [kworker/u4:0-flush-8:0]
+root          10       2  0 13:32 ?        00:00:00 [mm_percpu_wq]
+root          11       2  0 13:32 ?        00:00:00 [rcu_tasks_kthread]
+root          12       2  0 13:32 ?        00:00:00 [rcu_tasks_rude_kthread]
+root          13       2  0 13:32 ?        00:00:00 [rcu_tasks_trace_kthread]
+root          14       2  0 13:32 ?        00:00:00 [ksoftirqd/0]
+root          15       2  0 13:32 ?        00:00:01 [rcu_preempt]
+root          16       2  0 13:32 ?        00:00:00 [migration/0]
+root          17       2  0 13:32 ?        00:00:00 [idle_inject/0]
+root          19       2  0 13:32 ?        00:00:00 [cpuhp/0]
+root          20       2  0 13:32 ?        00:00:00 [cpuhp/1]
+root          21       2  0 13:32 ?        00:00:00 [idle_inject/1]
+root          22       2  0 13:32 ?        00:00:00 [migration/1]
+root          23       2  0 13:32 ?        00:00:00 [ksoftirqd/1]
+root          25       2  0 13:32 ?        00:00:00 [kworker/1:0H-events_highpri]
+root          28       2  0 13:32 ?        00:00:00 [kdevtmpfs]
+root          29       2  0 13:32 ?        00:00:00 [inet_frag_wq]
+root          30       2  0 13:32 ?        00:00:00 [kauditd]
+root          31       2  0 13:32 ?        00:00:00 [khungtaskd]
+root          32       2  0 13:32 ?        00:00:00 [oom_reaper]
+root          33       2  0 13:32 ?        00:00:01 [kworker/u4:2-ext4-rsv-conversion]
+root          34       2  0 13:32 ?        00:00:00 [writeback]
+root          35       2  0 13:32 ?        00:00:00 [kcompactd0]
+root          36       2  0 13:32 ?        00:00:00 [ksmd]
+root          37       2  0 13:32 ?        00:00:00 [khugepaged]
+root          38       2  0 13:32 ?        00:00:00 [kintegrityd]
+root          39       2  0 13:32 ?        00:00:00 [kblockd]
+root          40       2  0 13:32 ?        00:00:00 [blkcg_punt_bio]
+root          41       2  0 13:32 ?        00:00:00 [tpm_dev_wq]
+root          42       2  0 13:32 ?        00:00:00 [edac-poller]
+root          43       2  0 13:32 ?        00:00:00 [devfreq_wq]
+root          45       2  0 13:32 ?        00:00:00 [kworker/0:1H-kblockd]
+root          46       2  0 13:32 ?        00:00:00 [kswapd0]
+root          54       2  0 13:32 ?        00:00:00 [kthrotld]
+root          56       2  0 13:32 ?        00:00:00 [acpi_thermal_pm]
+root          57       2  0 13:32 ?        00:00:00 [xenbus_probe]
+root          58       2  0 13:32 ?        00:00:00 [mld]
+root          59       2  0 13:32 ?        00:00:00 [kworker/1:1H-kblockd]
+root          60       2  0 13:32 ?        00:00:00 [ipv6_addrconf]
+root          65       2  0 13:32 ?        00:00:00 [kstrp]
+root          70       2  0 13:32 ?        00:00:00 [zswap-shrink]
+root          71       2  0 13:32 ?        00:00:00 [kworker/u5:0]
+root         143       2  0 13:32 ?        00:00:00 [cryptd]
+root         146       2  0 13:32 ?        00:00:00 [ata_sff]
+root         147       2  0 13:32 ?        00:00:00 [scsi_eh_0]
+root         149       2  0 13:32 ?        00:00:00 [scsi_tmf_0]
+root         150       2  0 13:32 ?        00:00:00 [scsi_eh_1]
+root         151       2  0 13:32 ?        00:00:00 [scsi_eh_2]
+root         153       2  0 13:32 ?        00:00:00 [scsi_tmf_1]
+root         154       2  0 13:32 ?        00:00:00 [scsi_tmf_2]
+root         155       2  0 13:32 ?        00:00:00 [irq/18-vmwgfx]
+root         156       2  0 13:32 ?        00:00:00 [ttm]
+root         201       2  0 13:32 ?        00:00:00 [kworker/0:2H-kblockd]
+root         235       2  0 13:32 ?        00:00:00 [jbd2/sda1-8]
+root         236       2  0 13:32 ?        00:00:00 [ext4-rsv-conver]
+root         291       1  0 13:32 ?        00:00:00 /lib/systemd/systemd-journald
+root         302       2  0 13:32 ?        00:00:00 [psimon]
+root         345       1  0 13:32 ?        00:00:00 /lib/systemd/systemd-udevd
+root         355       2  0 13:32 ?        00:00:00 [psimon]
+root         387       1  0 13:32 ?        00:00:00 /usr/sbin/haveged --Foreground --verbose=1
+message+     404       1  0 13:32 ?        00:00:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfi
+polkitd      407       1  0 13:32 ?        00:00:00 /usr/lib/polkit-1/polkitd --no-debug
+root         409       1  0 13:32 ?        00:00:00 /lib/systemd/systemd-logind
+root         481       2  0 13:32 ?        00:00:00 [psimon]
+root         486       1  0 13:32 ?        00:00:00 /usr/sbin/NetworkManager --no-daemon
+root         505       1  0 13:32 ?        00:00:00 /usr/sbin/ModemManager
+root         536       2  0 13:32 ?        00:00:00 [rpciod]
+root         539       2  0 13:32 ?        00:00:00 [xprtiod]
+root         541       1  0 13:32 ?        00:00:00 /usr/sbin/cron -f
+root         560       1  0 13:32 ?        00:00:00 /usr/sbin/VBoxService
+root         723       1  0 13:32 ?        00:00:00 /usr/sbin/lightdm
+root         734     723  1 13:32 tty7     00:00:28 /usr/lib/xorg/Xorg :0 -seat seat0 -auth /var/run/lightdm/root/:0 -n
+root         736       1  0 13:32 tty1     00:00:00 /sbin/agetty -o -p -- \u --noclear - linux
+root         755       2  0 13:32 ?        00:00:00 [psimon]
+rtkit        785       1  0 13:32 ?        00:00:00 /usr/libexec/rtkit-daemon
+root         857     723  0 13:32 ?        00:00:00 lightdm --session-child 15 26
+kali         864       1  0 13:32 ?        00:00:00 /lib/systemd/systemd --user
+kali         865     864  0 13:32 ?        00:00:00 (sd-pam)
+root         879       2  0 13:32 ?        00:00:00 [psimon]
+kali         881     864  0 13:32 ?        00:00:00 /usr/bin/pipewire
+kali         882     864  0 13:32 ?        00:00:00 /usr/bin/pipewire -c filter-chain.conf
+kali         883     864  0 13:32 ?        00:00:00 /usr/bin/wireplumber
+kali         885     864  0 13:32 ?        00:00:00 /usr/bin/pipewire-pulse
+kali         886     864  0 13:32 ?        00:00:00 /usr/bin/gnome-keyring-daemon --foreground --components=pkcs11,secr
+kali         888     864  0 13:32 ?        00:00:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidf
+kali         908     857  0 13:32 ?        00:00:00 xfce4-session
+kali         962       1  0 13:32 ?        00:00:00 /usr/bin/VBoxClient --clipboard
+kali         964     962  0 13:32 ?        00:00:00 /usr/bin/VBoxClient --clipboard
+kali         978       1  0 13:32 ?        00:00:00 /usr/bin/VBoxClient --seamless
+kali         979     978  0 13:32 ?        00:00:01 /usr/bin/VBoxClient --seamless
+kali         985       1  0 13:32 ?        00:00:00 /usr/bin/VBoxClient --draganddrop
+kali         987     985  0 13:32 ?        00:00:05 /usr/bin/VBoxClient --draganddrop
+kali         998     908  0 13:32 ?        00:00:00 /usr/bin/ssh-agent x-session-manager
+kali        1008     864  0 13:32 ?        00:00:00 /usr/libexec/at-spi-bus-launcher
+kali        1015    1008  0 13:32 ?        00:00:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/acce
+kali        1027     864  0 13:32 ?        00:00:00 /usr/libexec/at-spi2-registryd --use-gnome-session
+kali        1039     864  0 13:32 ?        00:00:00 /usr/bin/gpg-agent --supervised
+kali        1041     908  0 13:32 ?        00:00:08 xfwm4 --display :0.0 --sm-client-id 2a3c25199-1123-43fa-82dc-9d003f
+kali        1045     864  0 13:32 ?        00:00:00 /usr/libexec/gvfsd
+kali        1051     864  0 13:32 ?        00:00:00 /usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f
+kali        1070       1  0 13:32 ?        00:00:00 /usr/bin/VBoxClient --vmsvga
+kali        1071    1070  0 13:32 ?        00:00:00 /usr/bin/VBoxClient --vmsvga
+kali        1080     908  0 13:32 ?        00:00:00 xfsettingsd --display :0.0 --sm-client-id 253e59ee8-6784-428b-8720-
+root        1084       1  0 13:32 ?        00:00:00 /usr/libexec/upowerd
+kali        1090     908  0 13:32 ?        00:00:00 xfce4-panel --display :0.0 --sm-client-id 2155ee870-20c7-4823-b5b8-
+kali        1095     908  0 13:32 ?        00:00:00 Thunar --sm-client-id 28719d3fa-5c20-4ef9-9310-7e5aed554d8c --daemo
+kali        1101    1090  0 13:32 ?        00:00:00 /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-l
+kali        1102     908  0 13:32 ?        00:00:01 xfdesktop --display :0.0 --sm-client-id 21becb6e2-b649-4d15-b2b9-d6
+kali        1109    1090  0 13:32 ?        00:00:05 /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-l
+kali        1110    1090  0 13:32 ?        00:00:00 /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-l
+kali        1111    1090  0 13:32 ?        00:00:05 /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-l
+kali        1112    1090  0 13:32 ?        00:00:00 /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-l
+kali        1113    1090  0 13:32 ?        00:00:00 /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-l
+kali        1114    1090  0 13:32 ?        00:00:00 /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-l
+kali        1115    1090  0 13:32 ?        00:00:00 /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-l
+kali        1146     864  0 13:32 ?        00:00:00 /usr/lib/x86_64-linux-gnu/xfce4/notifyd/xfce4-notifyd
+kali        1185     908  0 13:32 ?        00:00:00 xfce4-power-manager --restart --sm-client-id 29ebbb535-6892-45c8-b0
+kali        1194     908  0 13:32 ?        00:00:00 /usr/libexec/geoclue-2.0/demos/agent
+kali        1199     908  0 13:32 ?        00:00:00 nm-applet
+kali        1206     908  0 13:32 ?        00:00:00 light-locker
+kali        1208     908  0 13:32 ?        00:00:00 xiccd
+kali        1209       1  0 13:32 ?        00:00:00 xcape -e Super_L Control_L Escape
+colord      1232       1  0 13:32 ?        00:00:00 /usr/libexec/colord
+kali        1235     864  0 13:32 ?        00:00:00 /usr/libexec/dconf-service
+kali        1236     864  0 13:32 ?        00:00:00 /usr/libexec/gvfs-udisks2-volume-monitor
+kali        1240     908  0 13:32 ?        00:00:00 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+root        1261       1  0 13:32 ?        00:00:00 /usr/libexec/udisks2/udisksd
+kali        1262     908  0 13:32 ?        00:00:00 /usr/bin/python3 /usr/bin/blueman-applet
+kali        1316     864  0 13:32 ?        00:00:00 /usr/libexec/gvfs-goa-volume-monitor
+kali        1335     864  0 13:32 ?        00:00:00 /usr/libexec/gvfs-mtp-volume-monitor
+kali        1357     864  0 13:32 ?        00:00:00 /usr/libexec/gvfs-afc-volume-monitor
+kali        1368     864  0 13:32 ?        00:00:00 /usr/libexec/gvfs-gphoto2-volume-monitor
+kali        1380    1045  0 13:32 ?        00:00:00 /usr/libexec/gvfsd-trash --spawner :1.20 /org/gtk/gvfs/exec_spaw/0
+kali        1386     864  0 13:32 ?        00:00:00 /usr/libexec/gvfsd-metadata
+kali        1411     864  0 13:32 ?        00:00:00 /usr/libexec/bluetooth/obexd
+kali        1431       1  0 13:32 ?        00:00:04 /usr/bin/qterminal
+kali        1442    1431  0 13:33 pts/0    00:00:00 /usr/bin/zsh
+root        4476       2  0 13:38 ?        00:00:01 [kworker/1:0-events]
+root        6195       2  0 13:42 ?        00:00:00 [kworker/u4:3-events_unbound]
+root        8332       2  0 13:47 ?        00:00:00 [kworker/1:1]
+root       10858       2  0 13:53 ?        00:00:00 [kworker/0:0-events_freezable_power_]
+kali       14994     864  0 14:02 ?        00:00:00 /usr/lib/x86_64-linux-gnu/xfce4/xfconf/xfconfd
+root       15429       2  0 14:03 ?        00:00:00 [kworker/0:2-ata_sff]
+kali       17056    1442  3 14:07 pts/0    00:00:06 firefox-esr
+kali       17104     864  0 14:07 ?        00:00:00 /usr/libexec/xdg-desktop-portal
+kali       17109     864  0 14:07 ?        00:00:00 /usr/libexec/xdg-document-portal
+kali       17114     864  0 14:07 ?        00:00:00 /usr/libexec/xdg-permission-store
+root       17128   17109  0 14:07 ?        00:00:00 fusermount3 -o rw,nosuid,nodev,fsname=portal,auto_unmount,subtype=p
+kali       17133     864  0 14:07 ?        00:00:00 /usr/libexec/xdg-desktop-portal-gtk
+kali       17159   17056  0 14:07 pts/0    00:00:00 /usr/lib/firefox-esr/firefox-esr -contentproc -parentBuildID 202307
+root       17178       1  0 14:07 ?        00:00:00 /usr/sbin/pcscd --foreground --auto-exit
+kali       17225   17056  0 14:07 pts/0    00:00:00 /usr/lib/firefox-esr/firefox-esr -contentproc -childID 1 -isForBrow
+kali       17276   17056  0 14:07 pts/0    00:00:00 /usr/lib/firefox-esr/firefox-esr -contentproc -childID 2 -isForBrow
+kali       17329   17056  0 14:07 pts/0    00:00:00 /usr/lib/firefox-esr/firefox-esr -contentproc -childID 3 -isForBrow
+kali       17340   17056  0 14:07 pts/0    00:00:00 /usr/lib/firefox-esr/firefox-esr -contentproc -childID 4 -isForBrow
+kali       17365   17056  0 14:07 pts/0    00:00:00 /usr/lib/firefox-esr/firefox-esr -contentproc -childID 5 -isForBrow
+root       18034       2  0 14:09 ?        00:00:00 [kworker/0:1-events]
+kali       18671    1442  0 14:10 pts/0    00:00:00 ps -ef
+                                                                                                                       
+┌──(kali㉿kali)-[/home]
+└─$ 
