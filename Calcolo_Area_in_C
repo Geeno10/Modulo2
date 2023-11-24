@@ -1,0 +1,25 @@
+                                                                                                                       
+┌──(kali㉿kali)-[/home/coding]
+└─$ sudo more code.c      
+//Author Luigi Riglia
+//L'esercizio richiede dato un valore in input  di calcolare area di cerchio, quadrato e triangolo equilatero.
+#include<stdio.h>
+#include<math.h>
+
+float area(char a, float n){
+        switch(a){
+                case 'c':return 3.14*n*n;
+                case 'q':return n*n; 
+                case 't':return(sqrt(3)/4) *n*n;float aq(float n);
+        }
+}
+
+int main(){
+        float  d;
+        printf("Inserisci num:");
+        scanf("%f",&d);
+        printf("Area Cerchio: %.3f\nArea Quadrato: %.3f\nArea Triangolo Eq: %.3f",area('c',d),area('q',d),area('t',d));
+}
+                                                                                                                       
+┌──(kali㉿kali)-[/home/coding]
+└─$ 
