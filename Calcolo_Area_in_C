@@ -10,7 +10,7 @@ float area(char a, float n){
         switch(a){
                 case 'c':return 3.14*n*n;
                 case 'q':return n*n; 
-                case 't':return(sqrt(3)/4) *n*n;float aq(float n);
+                case 't':return(sqrt(3)/4) *n*n;
         }
 }
 
