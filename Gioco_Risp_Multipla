@@ -1,0 +1,103 @@
+#include<stdio.h>
+#include<string.h>
+#include<ctype.h>
+
+void clearBuff(){
+        int c;
+        while((c = getchar()) != '\n' && c != EOF) { }
+        }
+
+int verifica(int dom, char r){
+        switch(dom){
+                case 1: while(tolower(r) != 'a' &&  tolower(r) != 'b'){
+                        printf("\nValore inserito non valido");
+                        printf("\nInseire risposta valida (A/B): ");
+                        scanf(" %c",&r);
+                        clearBuff();
+                        }
+                        if(tolower(r) == 'a')
+                              return 1;
+                        else
+                              return 0;
+
+                case 2: if(tolower(r) != 'a' && tolower(r) != 'b' && tolower(r) != 'c'){
+                        printf("\nValore inserito non valido, la risposta viene considerata errata\n");
+                        return 0;
+                        }
+                        else if(tolower(r) == 'c')
+                              return 10;
+                        else
+                              return 0;
+                case 3: if(tolower(r) != 'a' && tolower(r) != 'b' && tolower(r) != 'c'){
+                        printf("\nValore inserito non valido, la risposta viene considerata errata\n");
+                        return 0;
+                        }
+                        else if(tolower(r) == 'b')
+                              return 10;
+                        else
+                              return 0;
+                case 4: if(tolower(r) != 'a' && tolower(r) != 'b' && tolower(r) != 'c'){
+                        printf("\nValore inserito non valido, la risposta viene considerata errata\n");
+                        return 0;
+                        }
+                        else if(tolower(r) == 'a')
+                              return 10;
+                        else
+                              return 0;
+        }
+}
+
+int domanda(int i){
+        char risp;
+        switch(i){
+                case 1: printf("\nQual e' la capitale d'Italia:");
+                        printf("\n A: Roma - B: Milano - C: Napoli");
+                        printf("\n  Risposta: ");
+                        scanf(" %c",&risp);
+                        clearBuff();
+                        return verifica(2,risp);
+
+                case 2: printf("\nQuanti lati ha un triangolo:");
+                        printf("\n A: 2 - B: 3  - C: 4");
+                        printf("\n  Risposta: ");
+                        scanf(" %c",&risp);
+                        clearBuff();
+                        return verifica(3,risp);
+
+                case 3: printf("\nQuanle stagione segue l'estate:");
+                        printf("\n A: Autunno - B: Primavera - C: Inverno");
+                        printf("\n  Risposta: ");
+                        scanf(" %c",&risp);
+                        clearBuff();
+                        return verifica(4,risp);
+        }
+}
+
+
+void partita(){
+        char nome[20];
+        int punteggio=0;
+        printf("\nInserisci il tuo nome: ");
+        fgets(nome, sizeof(nome),stdin);
+        clearBuff();
+        size_t len = strcspn(nome, "\n");
+        nome[len] = '\0';
+        for(int i = 0; i<=3; i++){
+                punteggio += domanda(i);
+        }
+        printf("\nPartita terminata, %s hai totalizzato %d punti", nome, punteggio);
+}
+
+
+int main(){
+        char scelta;
+        printf("\nGioco a risposta multipla!!");
+        printf("\nA. Inizia nuova partita - B. Esci dal gioco: ");
+        scanf(" %c",&scelta);
+        clearBuff();
+        if(verifica(1,scelta) > 0)
+                partita();
+        else
+                return 0;
+
+}
