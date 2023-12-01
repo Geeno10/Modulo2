@@ -1,0 +1,42 @@
+# Esercizio calcolo aree con Python
+import math
+
+
+def perimetro(scelta, a, b):
+    match scelta:
+        case 1:
+            return a * 4
+        case 2:
+            return round(2 * math.pi * a, 2)
+        case 3:
+            return a * 2 + b * 2
+
+
+scelta = ""
+print("Programma per calcolo perimentri e circonferenze")
+while scelta.lower() != 'a' and scelta.lower() != 'b' and scelta.lower() != 'c':
+    scelta = input("A. Quadrato - B. Cerchio - C. Rettangolo\nInserisci scelta: ")
+    if scelta.lower() != 'a' and scelta.lower() != 'b' and scelta.lower() != 'c':
+        print("Valore inserito non valido")
+
+if scelta.lower() == 'a':
+    try:
+        val = int(input("Inserire valore lato: "))
+        print(f"Il perimetro del quadrato di lato {val} è {perimetro(1, val, 0)}")
+    except:
+        print("Valore non concesso per il calcolo del perimetro del quadrato")
+elif scelta.lower() == 'b':
+    try:
+        val = int(input("Inserire valore raggio: "))
+        print(f"La circonferenza del cerchio di raggio {val} è {perimetro(2, val, 0)}")
+    except:
+        print("Valore non concesso per il calcolo della circonferenza del quadrato")
+
+elif scelta.lower() == 'c':
+    try:
+        val = int(input("Inserire valore base: "))
+        val2 = int(input("Inserire valore altezza: "))
+        print(f"Il perimetro del rettangolo di base {val} e altezza {val2} è {perimetro(3, val, val2)}")
+    except:
+        print("Valori non concessi per il calcolo del perimetro del rettangolo")
+print("The end")
