@@ -1,0 +1,22 @@
+# Scrivi una funzione che data in ingresso una lista A contenente n parole,
+# restituisca in output una lista B di interi che rappresentano la lunghezza delle parole contenute in A.
+def getlista():
+    l = []
+    while True:
+        l.append(input("Inserisci parola: "))
+        if input("Inserire nuova parola? (s/n): ").lower() != "s":
+            break
+    return l
+
+
+def getlunghezzelarole(parole):
+    l = []
+    for p in parole:
+        l.append(len(p))
+    return l
+
+
+l = getlista()
+l2 = getlunghezzelarole(l)
+for parola in l:
+    print("La parola", parola, "è lunga", l2[l.index(parola)], "caratteri")
